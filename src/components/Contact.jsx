@@ -1,12 +1,21 @@
 import { MapPin, Phone, Store } from 'lucide-react';
-import { BRAND, MAPS_URL, WHATSAPP_DISPLAY, WHATSAPP_NUMBER } from '../config';
+import { BRAND, MAPS_URL, TIKTOK_URL, WHATSAPP_DISPLAY, WHATSAPP_NUMBER } from '../config';
 import WhatsAppButton from './WhatsAppButton';
 import Reveal from './Reveal';
+
+function TikTokIcon({ size = 22, ...props }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" width={size} height={size} aria-hidden="true" {...props}>
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+    </svg>
+  );
+}
 
 export default function Contact() {
   const rows = [
     { icon: Store, label: 'Brand', value: BRAND },
     { icon: Phone, label: 'WhatsApp', value: <a className="underline-offset-2 hover:underline" href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer">{WHATSAPP_DISPLAY}</a> },
+    { icon: TikTokIcon, label: 'TikTok', value: <a className="underline-offset-2 hover:underline hover:text-rose" href={TIKTOK_URL} target="_blank" rel="noopener noreferrer">@menapa_plushkidsfashion</a> },
     { icon: MapPin, label: 'Location', value: <a className="underline underline-offset-2 hover:text-rose" href={MAPS_URL} target="_blank" rel="noopener noreferrer">Find us on Google</a> },
   ];
   return (
