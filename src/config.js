@@ -1,5 +1,5 @@
 // Single source of truth for business details. Edit here only.
-export const BRAND = 'Menampa Plush Kids';
+export const BRAND = 'Menapa Plush Kids';
 export const WHATSAPP_NUMBER = '233596776672';
 export const WHATSAPP_DISPLAY = '+233 59 677 6672';
 export const DEFAULT_MESSAGE =
