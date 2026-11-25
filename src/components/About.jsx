@@ -13,7 +13,7 @@ export default function About() {
           <p className="eyebrow">About Us</p>
           <h2 className="h2 mt-3">Fashion that makes little ones feel special</h2>
           <p className="mt-5 text-lg text-ink/80">
-            Menampa Plush Kids is a children's fashion brand built around style and comfort. We love helping children look and feel their best, whether it's for school, play or a special day out.
+            Menapa Plush Kids is a children's fashion brand built around style and comfort. We love helping children look and feel their best, whether it's for school, play or a special day out.
           </p>
           <p className="mt-4 text-ink/80">
             Browse our collection online, then chat with us on WhatsApp to ask about styles, sizes and ordering.
